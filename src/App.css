@@ -113,6 +113,68 @@
   padding: 15px 0px;
 }
 
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .address {
+    font-size: 15px;
+  }
+
+  .hero-header {
+    font-size: 50px;
+    padding-top: 50px;
+  }
+
+  .hero-intro {
+    font-size: 28px;
+    padding-top: 18px;
+    width: 55%;
+    margin: auto;
+  }
+
+  .perk-description {
+    width: 100%;
+  }
+
+  .perk-row {
+    width: 60%;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+
+  .pin-icon {
+    width: 44px;
+  }
+
+  .price-amount {
+    font-size: 50px;
+  }
+
+  .price-dollar-sign {
+    font-size: 20px;
+  }
+
+  .price-description {
+    font-size: 15px;
+  }
+
+  .price-plus {
+    font-size: 35px;
+  }
+
+  .reservation {
+    padding-top: 50px;
+  }
+
+  .reserve-button {
+    padding-top: 20px;
+  }
+
+  .section-title {
+    font-size: 35px;
+    padding: 30px 0px;
+  }
+}
+
 .btn-primary {
   color: #fff;
   background-color: #BFA57B;

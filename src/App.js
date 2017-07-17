@@ -56,7 +56,7 @@ class App extends Component {
             <div className="why-almondspace">
               <div className="section-title">Why AlmondSpace?</div>
 
-              <div className="row">
+              <div className="row  perk-row">
                 <div className="col-sm-6">
                   <div className="icon-text perk-icon-text">
                     <div>
@@ -81,7 +81,7 @@ class App extends Component {
                 </div>
               </div>
 
-              <div className="row">
+              <div className="row perk-row">
                 <div className="col-sm-6">
                   <div className="icon-text perk-icon-text">
                     <div>
