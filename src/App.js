@@ -8,7 +8,7 @@ import './App.css'
 
 const navbarStyle = {
   backgroundColor: 'white',
-  borderBottom: '1px solid #D5D5D5',
+  borderBottom: '1px solid #EEEEEE',
 }
 
 class App extends Component {
