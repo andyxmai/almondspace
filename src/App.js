@@ -22,7 +22,7 @@ class App extends Component {
           <div className="main">
             <div className="hero">
               <div className="hero-header">
-                <div>The Ideal Space for Meetings</div>
+                <div>Repurposed space crafted for meetings</div>
               </div>
               <p className="hero-intro">
                 We created an experience that lets you focus solely on the people you are meeting. And nothing else.
