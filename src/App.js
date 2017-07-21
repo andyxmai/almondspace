@@ -40,7 +40,7 @@ class App extends Component {
                 </div>
               </div>
               <div className="reserve-button">
-                <a href="sms:2024680722&body=I'd like to reserve a table!"><button type="button" className="btn btn-primary reserve-btn"><b>Reserve your table</b></button></a>
+                <a href="sms:6503089561&body=I'd like to reserve a table!"><button type="button" className="btn btn-primary reserve-btn"><b>Reserve your table</b></button></a>
               </div>
             </div>
             <div className="map">
@@ -58,7 +58,7 @@ class App extends Component {
                     </div>
                     <div className="perk">
                       <div className="perk-header">Convenience</div>
-                      <div className="perk-description">No more waiting in line to order and pick up your drink</div>
+                      <div className="perk-description">No more waiting in line to order and awkward small talk</div>
                     </div>
                   </div>
                 </div>
