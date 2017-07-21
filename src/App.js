@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import calendar from './calendar.png'
 import coffee from './coffee.png'
 import guitar from './guitar.png'
-import placeholder from './placeholder.png'
 import waiter from './waiter.png'
 import './App.css'
 
@@ -42,9 +41,18 @@ class App extends Component {
               <div className="reserve-button">
                 <a href="sms:6503089561&body=I'd like to reserve a table!"><button type="button" className="btn btn-primary reserve-btn"><b>Reserve your table</b></button></a>
               </div>
+              <div className="reserve-text">
+                <div className="reserve-text-title">
+                  To reserve your table, text
+                </div>
+                <div>
+                  (650) 308-9561
+                </div>
+              </div>
             </div>
             <div className="map">
               <iframe className="map-frame" frameborder="0"
+                title="map"
                 src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJL4mjMTm7j4ARSrl1ZnMUS80&zoom=16&key=AIzaSyCDzFQUy2Ip5qA7YbLAJCK9yNd4MMZt9GE" allowfullscreen></iframe>
             </div>
             <div className="why-almondspace">
