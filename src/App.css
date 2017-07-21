@@ -21,7 +21,7 @@
 }
 
 .hero-header {
-  font-size: 25px;
+  font-size: 21px;
   color: #484847;
   padding-top: 30px;
 }
@@ -40,6 +40,16 @@
 
 .main {
   text-align: center;
+}
+
+.map {
+  padding-top: 20px;
+}
+
+.map-frame {
+  border: 0;
+  height: 250px;
+  width: 100%;
 }
 
 .perk {
@@ -72,7 +82,7 @@
 }
 
 .price-amount {
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 100;
 }
 
@@ -86,28 +96,35 @@
   font-weight: 600;
 }
 
+.price-disclaimer {
+  font-size: 13px;
+  color: #787878;
+}
+
 .price-plus {
   padding-left: 10px;
   padding-right: 3px;
   padding-top: 10px;
 }
 
+.price-unit {
+  font-size: 14px;
+}
+
 .pricing {
-  display: flex;
-  justify-content: center;
 }
 
 .reservation {
-  padding-top: 35px;
+  padding-top: 20px;
   color: #676767;
 }
 
 .reserve-button {
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 .section-title {
-  font-size: 18px;
+  font-size: 20px;
   color: #BFA57B;
   font-weight: 600;
   padding: 15px 0px;
@@ -129,6 +146,15 @@
     padding-top: 18px;
     width: 55%;
     margin: auto;
+  }
+
+  .map {
+    padding-top: 20px;
+  }
+
+  .map-frame {
+    height: 320px;
+    width: 500px;
   }
 
   .perk-description {
@@ -157,16 +183,30 @@
     font-size: 15px;
   }
 
+  .price-disclaimer {
+    font-size: 15px;
+  }
+
   .price-plus {
     font-size: 35px;
   }
 
+  .price-unit {
+    font-size: 16px;
+  }
+
   .reservation {
-    padding-top: 50px;
+    padding-top: 20px;
   }
 
   .reserve-button {
-    padding-top: 20px;
+    padding-top: 25px;
+  }
+
+  .reserve-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    border-radius: 0.3rem;
   }
 
   .section-title {

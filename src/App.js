@@ -30,28 +30,22 @@ class App extends Component {
             </div>
             <div className="reservation">
               <div className="pricing">
-                <div>
-                  <div className="price-amount"><span className="price-dollar-sign">$</span><span>8</span></div>
-                  <div className="price-description">first 30 min</div>
+                <div className="price-amount">
+                  <span className="price-dollar-sign">$</span>
+                  <span>6</span>
+                  <span className="price-unit"> / 30 min</span>
                 </div>
-                <div className="price-plus">+</div>
-                <div>
-                  <div className="price-amount"><span className="price-dollar-sign">$</span>5</div>
-                  <div className="price-description">each addl 30 min</div>
+                <div className="price-disclaimer">
+                  minimum 30 min · prorated after first 30 min
                 </div>
               </div>
               <div className="reserve-button">
-                <a href="sms:2024680722&body=I'd like to reserve a table!"><button type="button" className="btn btn-primary"><b>Reserve your table</b></button></a>
+                <a href="sms:2024680722&body=I'd like to reserve a table!"><button type="button" className="btn btn-primary reserve-btn"><b>Reserve your table</b></button></a>
               </div>
             </div>
-            <div className="address-group icon-text">
-              <div>
-                <img src={placeholder} className="pin-icon" alt="pin" />
-              </div>
-              <div className="address">
-                <div>496 Hamilton Ave</div>
-                <div>Palo Alto, CA 94301</div>
-              </div>
+            <div className="map">
+              <iframe className="map-frame" frameborder="0"
+                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJL4mjMTm7j4ARSrl1ZnMUS80&zoom=16&key=AIzaSyCDzFQUy2Ip5qA7YbLAJCK9yNd4MMZt9GE" allowfullscreen></iframe>
             </div>
             <div className="why-almondspace">
               <div className="section-title">Why AlmondSpace?</div>
@@ -63,7 +57,7 @@ class App extends Component {
                       <img src={waiter} className="perk-icon" alt="service" />
                     </div>
                     <div className="perk">
-                      <div className="perk-header">Service</div>
+                      <div className="perk-header">Convenience</div>
                       <div className="perk-description">No more waiting in line to order and pick up your drink</div>
                     </div>
                   </div>
