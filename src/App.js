@@ -66,7 +66,7 @@ class App extends Component {
                     </div>
                     <div className="perk">
                       <div className="perk-header">Convenience</div>
-                      <div className="perk-description">No more waiting in line to order and awkward small talk</div>
+                      <div className="perk-description">No more waiting in line to order and have awkward small talk</div>
                     </div>
                   </div>
                 </div>
