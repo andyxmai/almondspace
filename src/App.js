@@ -50,7 +50,7 @@ class App extends Component {
                 src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJL4mjMTm7j4ARSrl1ZnMUS80&zoom=16&key=AIzaSyCDzFQUy2Ip5qA7YbLAJCK9yNd4MMZt9GE" allowfullscreen></iframe>
             </div>
 
-            <div className="why-almondspace">
+            <div className="why-almondspace section">
               <div className="section-title">Why AlmondSpace?</div>
 
               <div className="row  perk-row">
