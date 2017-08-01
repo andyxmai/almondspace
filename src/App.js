@@ -86,7 +86,7 @@ class App extends Component {
                     </div>
                     <div className="perk">
                       <div className="perk-header">Convenience</div>
-                      <div className="perk-description">Prime locations just steps from your office</div>
+                      <div className="perk-description">Prime location just steps from your office</div>
                     </div>
                   </div>
                 </div>
