@@ -29,7 +29,7 @@
   color: #676767;
   font-size: 15px;
   padding-top: 18px;
-  width: 83%;
+  width: 91%;
   margin: auto;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .map {
-  padding-top: 20px;
+  padding: 5px 0;
 }
 
 .map-frame {
@@ -116,16 +116,11 @@
 }
 
 .reservation {
-  padding-top: 20px;
+  padding: 20px 0px;
   color: #676767;
 }
 
 .reserve-button {
-  display: unset;
-}
-
-.reserve-text {
-  display: none;
 }
 
 .section-title {
@@ -154,7 +149,6 @@
   }
 
   .map {
-    padding-top: 20px;
   }
 
   .map-frame {
@@ -201,23 +195,10 @@
   }
 
   .reservation {
-    padding-top: 20px;
+    padding: 30px 0px;
   }
 
   .reserve-button {
-    padding-top: 25px;
-    display: none;
-  }
-
-  .reserve-text {
-    display: unset;
-    font-size: 35px;
-    color: #BFA57B;
-    font-weight: 600;
-  }
-
-  .reserve-text-title {
-    font-size: 16px;
   }
 
   .reserve-btn {
