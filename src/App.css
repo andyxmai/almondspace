@@ -9,6 +9,10 @@
   padding: 25px 0px;
 }
 
+.field {
+  width: 100%;
+}
+
 .logo-almond {
   color: #BFA57B;
 }
@@ -22,7 +26,7 @@
 
 .hero-header {
   font-size: 19px;
-  padding-top: 30px;
+  padding-top: 25px;
 }
 
 .hero-intro {
@@ -50,6 +54,21 @@
   border: 0;
   height: 250px;
   width: 100%;
+}
+
+.navbar {
+  height: 65px;
+}
+
+.navbar-brand {
+  padding-top: 3px;
+  padding-bottom: 0;
+}
+
+.navbar-default {
+  background-color: white;
+  border: none;
+  border-bottom: 1px solid #EEEEEE;
 }
 
 .perk {
@@ -120,7 +139,8 @@
   color: #676767;
 }
 
-.reserve-button {
+.reserve-btn {
+  width: 100%;
 }
 
 .section {
@@ -134,15 +154,36 @@
   padding: 18px 0px;
 }
 
+
+@media only screen and (max-width: 500px) {
+  .form-group {
+    width: 90%;
+    margin: auto;
+    padding: 5px 0px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   /* For desktop: */
   .address {
     font-size: 15px;
   }
 
+  .form-control {
+    font-size: 16px;
+  }
+
+  .form-email {
+    width: 250px !important;
+  }
+
+  .form-group {
+    padding: 5px;
+  }
+
   .hero-header {
     font-size: 50px;
-    padding-top: 50px;
+    padding-top: 45px;
   }
 
   .hero-intro {
@@ -206,9 +247,7 @@
   }
 
   .reserve-btn {
-    padding: 0.75rem 1.5rem;
-    font-size: 1.25rem;
-    border-radius: 0.3rem;
+    font-size: 16px;
   }
 
   .section-title {
