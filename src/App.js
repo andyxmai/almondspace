@@ -74,12 +74,12 @@ class App extends Component {
     const email = this.state.email
     const date = this.state.date
     const obj = this
-    if (email.length === 0) {
-        this.addErrorAlert('Please enter your email')
-    } else if (date.length === 0) {
+
+    if (date.length === 0) {
       this.addErrorAlert('Please choose a date')
-    }
-    else {
+    } else if (email.length === 0) {
+        this.addErrorAlert('Please enter your email')
+    } else {
       this.setState({ isLoading: true })
       window.emailjs.send("gmail","reservation_confirmation",{
         email: this.state.email,
