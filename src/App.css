@@ -143,6 +143,11 @@
   width: 100%;
 }
 
+.reservation-disclaimer {
+  font-size: 14px;
+  padding-top: 8px;
+}
+
 .section {
   padding-top: 20px;
 }
@@ -178,7 +183,7 @@
   }
 
   .form-group {
-    padding: 5px;
+    padding: 6px;
   }
 
   .hero-header {
@@ -240,7 +245,7 @@
   }
 
   .reservation {
-    padding: 30px 0px;
+    padding: 40px 0px;
   }
 
   .reserve-button {
@@ -289,6 +294,19 @@
 .btn-primary.active.focus,
 .open > .dropdown-toggle.btn-primary.focus {
   color: #fff;
+  background-color: #A08354;
+  border-color: #A08354;
+}
+
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus {
   background-color: #A08354;
   border-color: #A08354;
 }
