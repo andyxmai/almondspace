@@ -176,7 +176,7 @@ class App extends Component {
 
                 <div className="row">
                   <div className="form-group">
-                    <input type="email" className="form-control form-email" id="exampleInputEmail3" onChange={this.handleEmailChange} value={this.state.email} placeholder="Email" required />
+                    <input type="email" className="form-control form-email" id="exampleInputEmail3" onChange={this.handleEmailChange} value={this.state.email} placeholder="Work email" required />
                   </div>
                   <div className="form-group">
                     <Button
