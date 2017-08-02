@@ -257,6 +257,11 @@ class App extends Component {
               </div>
             </div>
 
+            <div className="section contact">
+              <div className="contact-title">Questions?</div>
+              <div className="contact-info">Email almondspacepa@gmail.com</div>
+            </div>
+
           </div>
         </div>
       </div>

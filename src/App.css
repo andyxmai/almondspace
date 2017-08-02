@@ -9,6 +9,17 @@
   padding: 25px 0px;
 }
 
+.contact-info {
+  color: #6A6A68;
+  font-size: 14px;
+}
+
+.contact-title {
+  font-size: 20px;
+  color: #515150;
+  font-weight: 600;
+}
+
 .field {
   width: 100%;
 }
@@ -149,7 +160,7 @@
 }
 
 .section {
-  padding-top: 20px;
+  padding: 20px 0px;
 }
 
 .section-title {
@@ -172,6 +183,13 @@
   /* For desktop: */
   .address {
     font-size: 15px;
+  }
+
+  .contact-info {
+  }
+
+  .contact-title {
+    font-size: 25px;
   }
 
   .form-control {
