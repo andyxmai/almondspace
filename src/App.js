@@ -32,6 +32,7 @@ class App extends Component {
     this.handleDurationChange = this.handleDurationChange.bind(this)
     this.handleEmailChange = this.handleEmailChange.bind(this)
     this.handleReservationClick = this.handleReservationClick.bind(this)
+    this.isWeekday = this.isWeekday.bind(this)
   }
 
   addSuccessAlert() {
@@ -100,6 +101,11 @@ class App extends Component {
     }
   }
 
+  isWeekday(date) {
+    const day = date.day()
+    return day !== 0 && day !== 6
+  }
+
   render() {
     return (
       <div>
@@ -132,6 +138,7 @@ class App extends Component {
                     <DatePicker
                       className="form-control"
                       minDate={moment()}
+                      filterDate={this.isWeekday}
                       selected={this.state.date}
                       onChange={this.handleDateChange}
                     />
