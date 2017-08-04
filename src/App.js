@@ -4,10 +4,11 @@ import office from './office-block.png'
 import guitar from './guitar.png'
 import waiter from './waiter.png'
 import './App.css'
-import DatePicker from 'react-bootstrap-date-picker'
 import Cookies from 'universal-cookie'
 import { ToastContainer, ToastMessage } from 'react-toastr'
 import { Button } from 'react-bootstrap'
+import DatePicker from 'react-datepicker'
+import moment from 'moment'
 
 const ToastMessageFactory = React.createFactory(ToastMessage.animation);
 const cookies = new Cookies();
@@ -18,10 +19,10 @@ class App extends Component {
     const email = cookies.get('email') ? cookies.get('email') : ''
     this.state = {
       isLoading: false,
-      date: '',
       duration: '30 minute',
       time: '9am',
       email,
+      date: moment()
     }
     this.addSuccessAlert = this.addSuccessAlert.bind(this)
     this.addErrorAlert = this.addErrorAlert.bind(this)
@@ -51,8 +52,8 @@ class App extends Component {
     this.refs.container.clear();
   }
 
-  handleDateChange(value, formattedValue) {
-    this.setState({ date: value })
+  handleDateChange(date) {
+    this.setState({ date })
   }
 
   handleTimeChange(e) {
@@ -70,7 +71,6 @@ class App extends Component {
 
   handleReservationClick(e) {
     e.preventDefault()
-    const dataObj = new Date(this.state.date)
     const email = this.state.email
     const date = this.state.date
     const obj = this
@@ -84,7 +84,7 @@ class App extends Component {
       window.emailjs.send("gmail","reservation_confirmation",{
         email: this.state.email,
         time: this.state.time,
-        date: dataObj.toLocaleDateString()
+        date: this.state.date.format("MM/DD/YY"),
       })
       .then(
         function(response) {
@@ -129,8 +129,13 @@ class App extends Component {
 
                 <div className="row">
                   <div className="form-group">
-                    <DatePicker id="example-datepicker" value={this.state.date} onChange={this.handleDateChange} />
-                    </div>
+                    <DatePicker
+                      className="form-control"
+                      minDate={moment()}
+                      selected={this.state.date}
+                      onChange={this.handleDateChange}
+                    />
+                  </div>
                   <div className="form-group">
                     <select className="form-control" value={this.state.time} onChange={this.handleTimeChange}>
                       <option value="9am">09:00 AM</option>
