@@ -261,8 +261,8 @@ class App extends Component {
                       <img src={guitar} className="perk-icon" alt="ambiance" />
                     </div>
                     <div className="perk">
-                      <div className="perk-header">Ambiance</div>
-                      <div className="perk-description">A place to meet without disrupting other coworkers</div>
+                      <div className="perk-header">Comfort</div>
+                      <div className="perk-description">A place for you to enjoy getting work done</div>
                     </div>
                   </div>
                 </div>
