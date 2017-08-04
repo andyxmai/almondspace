@@ -85,7 +85,8 @@ class App extends Component {
       window.emailjs.send("gmail","reservation_confirmation",{
         email: this.state.email,
         time: this.state.time,
-        date: this.state.date.format("MM/DD/YY"),
+        date: date.format("MM/DD/YY"),
+        duration: this.state.duration
       })
       .then(
         function(response) {
