@@ -33,6 +33,7 @@ class App extends Component {
     this.handleEmailChange = this.handleEmailChange.bind(this)
     this.handleReservationClick = this.handleReservationClick.bind(this)
     this.isWeekday = this.isWeekday.bind(this)
+    this.parseNameFromEmail = this.parseNameFromEmail.bind(this)
   }
 
   addSuccessAlert() {
@@ -75,6 +76,7 @@ class App extends Component {
     const email = this.state.email
     const date = this.state.date
     const obj = this
+    const firstName = this.parseNameFromEmail(email)
 
     if (date.length === 0) {
       this.addErrorAlert('Please choose a date')
@@ -86,7 +88,8 @@ class App extends Component {
         email: this.state.email,
         time: this.state.time,
         date: date.format("MM/DD/YY"),
-        duration: this.state.duration
+        duration: this.state.duration,
+        name: firstName,
       })
       .then(
         function(response) {
@@ -105,6 +108,14 @@ class App extends Component {
   isWeekday(date) {
     const day = date.day()
     return day !== 0 && day !== 6
+  }
+
+  parseNameFromEmail(email) {
+    const emailName = email.split("@")[0]
+    const firstName = emailName.split(".")[0]
+    const capitalizedFirstName = firstName.charAt(0).toUpperCase() + firstName.slice(1)
+
+    return capitalizedFirstName
   }
 
   render() {
