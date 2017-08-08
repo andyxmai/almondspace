@@ -148,10 +148,6 @@ class App extends Component {
                   <div className="form-group">
                     <div><label className="form-label">start time</label></div>
                     <select className="form-control" value={this.state.time} onChange={this.handleTimeChange}>
-                      <option value="9am">09:00 AM</option>
-                      <option value="9:15am">09:15 AM</option>
-                      <option value="9:30am">09:30 AM</option>
-                      <option value="9:45am">09:45 AM</option>
                       <option value="10am">10:00 AM</option>
                       <option value="10:15am">10:15 AM</option>
                       <option value="10:30am">10:30 AM</option>
