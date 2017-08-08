@@ -37,7 +37,7 @@ class App extends Component {
 
   addSuccessAlert() {
     this.clearAlert()
-    this.refs.container.success('See you soon!', 'Reservation confirmed', {
+    this.refs.container.success('A confirmation email was sent. See you soon!', 'Reservation confirmed', {
       closeButton: true,
     });
   }
@@ -136,6 +136,7 @@ class App extends Component {
 
                 <div className="row">
                   <div className="form-group">
+                    <label className="form-label">meeting date</label>
                     <DatePicker
                       className="form-control"
                       minDate={moment()}
@@ -145,6 +146,7 @@ class App extends Component {
                     />
                   </div>
                   <div className="form-group">
+                    <div><label className="form-label">start time</label></div>
                     <select className="form-control" value={this.state.time} onChange={this.handleTimeChange}>
                       <option value="9am">09:00 AM</option>
                       <option value="9:15am">09:15 AM</option>
@@ -178,6 +180,7 @@ class App extends Component {
                     </select>
                   </div>
                   <div className="form-group">
+                    <div><label className="form-label">duration</label></div>
                     <select className="form-control" value={this.state.duration} onChange={this.handleDurationChange}>
                       <option value="30 minute">30 minute meeting</option>
                       <option value="1 hour">1 hour meeting</option>
@@ -189,9 +192,11 @@ class App extends Component {
 
                 <div className="row">
                   <div className="form-group">
+                    <div><label className="form-label">work email</label></div>
                     <input type="email" className="form-control form-email" id="exampleInputEmail3" onChange={this.handleEmailChange} value={this.state.email} placeholder="Work email" required />
                   </div>
                   <div className="form-group">
+                    <div><label className="form-label"></label></div>
                     <Button
                       bsStyle="primary"
                       className="reserve-btn"
