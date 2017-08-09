@@ -9,6 +9,7 @@ import { ToastContainer, ToastMessage } from 'react-toastr'
 import { Button } from 'react-bootstrap'
 import DatePicker from 'react-datepicker'
 import moment from 'moment'
+import EmailValidator from 'email-validator'
 
 const ToastMessageFactory = React.createFactory(ToastMessage.animation);
 const cookies = new Cookies();
@@ -82,6 +83,8 @@ class App extends Component {
       this.addErrorAlert('Please choose a date')
     } else if (email.length === 0) {
         this.addErrorAlert('Please enter your email')
+    } else if (!EmailValidator.validate(email)) {
+      this.addErrorAlert('Invalid email')
     } else {
       this.setState({ isLoading: true })
       window.emailjs.send("gmail","reservation_confirmation",{
