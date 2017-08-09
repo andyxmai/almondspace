@@ -174,7 +174,7 @@ class App extends Component {
                       <option value="12:15pm">12:15 PM</option>
                       <option value="12:30pm">12:30 PM</option>
                       <option value="12:45pm">12:45 PM</option>
-                      <option value="9pm">01:00 PM</option>
+                      <option value="1pm">01:00 PM</option>
                       <option value="1:15pm">01:15 PM</option>
                       <option value="1:30pm">01:30 PM</option>
                       <option value="1:45pm">01:45 PM</option>
