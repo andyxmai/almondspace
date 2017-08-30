@@ -46,15 +46,15 @@
 }
 
 .hero-header {
-  font-size: 19px;
+  font-size: 18px;
   padding-top: 25px;
 }
 
 .hero-intro {
   color: #676767;
-  font-size: 15px;
+  font-size: 14px;
   padding-top: 18px;
-  width: 95%;
+  width: 100%;
   margin: auto;
 }
 
