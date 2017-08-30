@@ -3,9 +3,6 @@ import calendar from './calendar.png'
 import office from './office-block.png'
 import guitar from './guitar.png'
 import waiter from './waiter.png'
-import front from './front.jpeg'
-import left from './left.jpeg'
-import right from './right.jpeg'
 import './App.css'
 import Cookies from 'universal-cookie'
 import { ToastContainer, ToastMessage } from 'react-toastr'
@@ -303,9 +300,9 @@ class App extends Component {
               <div className="section-title">See the space</div>
               <div className="">
                 <Slider {...sliderSettings}>
-                  <div><img src={left} className="slider-picture" alt="left view" /></div>
-                  <div><img src={front} className="slider-picture" alt="front view" /></div>
-                  <div><img src={right} className="slider-picture" alt="right view" /></div>
+                  <div><img src='https://dl.dropboxusercontent.com/content_link/NnC8Q7VFc13LOepjhi1Z1XQw3nsQrOaHhJbqqxowe7xMVM8m1JItksE2suBpBO1P/file' className="slider-picture" alt="front view" /></div>
+                  <div><img src='https://dl.dropboxusercontent.com/content_link/JoonfGOwoZDreguIi0vHsJxTlTRt5xWc5oBuFqTymnFq507JbC3BgP8vdvxvuifw/file' className="slider-picture" alt="front view" /></div>
+                  <div><img src='https://dl.dropboxusercontent.com/content_link/JZo5JL8pBPqIT05rgpKePk2QwCre04V552E0z0ipna5qgvNrOz6UZvVXZFWD9x3M/file' className="slider-picture" alt="right view" /></div>
                 </Slider>
               </div>
             </div>
