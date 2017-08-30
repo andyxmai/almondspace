@@ -3,6 +3,9 @@ import calendar from './calendar.png'
 import office from './office-block.png'
 import guitar from './guitar.png'
 import waiter from './waiter.png'
+import front from './front.jpeg'
+import left from './left.jpeg'
+import right from './right.jpeg'
 import './App.css'
 import Cookies from 'universal-cookie'
 import { ToastContainer, ToastMessage } from 'react-toastr'
@@ -10,9 +13,19 @@ import { Button } from 'react-bootstrap'
 import DatePicker from 'react-datepicker'
 import moment from 'moment'
 import EmailValidator from 'email-validator'
+import Slider from 'react-slick'
 
-const ToastMessageFactory = React.createFactory(ToastMessage.animation);
-const cookies = new Cookies();
+
+const ToastMessageFactory = React.createFactory(ToastMessage.animation)
+const cookies = new Cookies()
+
+const sliderSettings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1
+}
 
 class App extends Component {
   constructor(props) {
@@ -141,10 +154,10 @@ class App extends Component {
               <div className="hero-header">
                 <div>The meeting space that’s always available</div>
               </div>
-              <p className="hero-intro">
+              <div className="hero-intro">
                 <div>Take the conference room conflicts out of your office.</div>
                 <div>Focus on being creative and productive instead.</div>
-              </p>
+              </div>
             </div>
             <div className="reservation">
               <form className="form-inline">
@@ -283,6 +296,17 @@ class App extends Component {
                   </div>
                 </div>
 
+              </div>
+            </div>
+
+            <div className="section">
+              <div className="section-title">See the space</div>
+              <div className="">
+                <Slider {...sliderSettings}>
+                  <div><img src={left} className="slider-picture" alt="left view" /></div>
+                  <div><img src={front} className="slider-picture" alt="front view" /></div>
+                  <div><img src={right} className="slider-picture" alt="right view" /></div>
+                </Slider>
               </div>
             </div>
 

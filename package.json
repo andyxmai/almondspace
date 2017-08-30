@@ -14,7 +14,9 @@
     "react-cookie": "^2.0.8",
     "react-datepicker": "^0.52.0",
     "react-dom": "^15.6.1",
+    "react-slick": "^0.15.0",
     "react-toastr": "^2.8.2",
+    "slick-carousel": "^1.7.1",
     "universal-cookie": "^2.0.8"
   },
   "scripts": {
