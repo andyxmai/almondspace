@@ -139,10 +139,11 @@ class App extends Component {
           <div className="main">
             <div className="hero">
               <div className="hero-header">
-                <div>Repurposed space crafted for meetings</div>
+                <div>The meeting space that’s always available</div>
               </div>
               <p className="hero-intro">
-                We created an experience that lets you brainstorm, collaborate, and unwind with coworkers.
+                <div>Take the conference room conflicts out of your office.</div>
+                <div>Focus on being creative and productive instead.</div>
               </p>
             </div>
             <div className="reservation">
@@ -239,8 +240,8 @@ class App extends Component {
                       <img src={calendar} className="perk-icon" alt="schedule" />
                     </div>
                     <div className="perk">
-                      <div className="perk-header">Reservations</div>
-                      <div className="perk-description">Book your table and guarantee your seating</div>
+                      <div className="perk-header">Availability</div>
+                      <div className="perk-description">No more office drama over conference room spaces</div>
                     </div>
                   </div>
                 </div>
