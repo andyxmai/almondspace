@@ -300,9 +300,9 @@ class App extends Component {
               <div className="section-title">See the space</div>
               <div className="">
                 <Slider {...sliderSettings}>
-                  <div><img src='https://dl.dropboxusercontent.com/content_link/NnC8Q7VFc13LOepjhi1Z1XQw3nsQrOaHhJbqqxowe7xMVM8m1JItksE2suBpBO1P/file' className="slider-picture" alt="front view" /></div>
-                  <div><img src='https://dl.dropboxusercontent.com/content_link/JoonfGOwoZDreguIi0vHsJxTlTRt5xWc5oBuFqTymnFq507JbC3BgP8vdvxvuifw/file' className="slider-picture" alt="front view" /></div>
-                  <div><img src='https://dl.dropboxusercontent.com/content_link/JZo5JL8pBPqIT05rgpKePk2QwCre04V552E0z0ipna5qgvNrOz6UZvVXZFWD9x3M/file' className="slider-picture" alt="right view" /></div>
+                  <div><img src="https://preview.ibb.co/jPGbE5/left.jpg" className="slider-picture" alt="front" border="0" /></div>
+                  <div><img src="https://preview.ibb.co/dV6bE5/front.jpg" className="slider-picture" alt="left" border="0" /></div>
+                  <div><img src="https://preview.ibb.co/fDi1gk/right.jpg" className="slider-picture" alt="right" border="0" /></div>
                 </Slider>
               </div>
             </div>
