@@ -318,9 +318,9 @@ class App extends Component {
                       <li className="pricing-feature">1 guest per visit</li>
                     </ul>
                     <Button
+                      href="mailto:hello@almondspace.com?subject=Individual%20Free%20Trial&body=I%20would%20like%20to%20start%20the%20individual%20trial!"
                       bsStyle="primary"
-                      className="reserve-btn"
-                      onClick={this.handleReservationClick}>
+                      className="reserve-btn">
                       <b>Try it free</b>
                     </Button>
                   </div>
@@ -338,14 +338,15 @@ class App extends Component {
                       <li className="pricing-feature">Use of space for private events</li>
                     </ul>
                     <Button
+                      href="mailto:hello@almondspace.com?subject=Company%20Free%20Trial&body=I%20would%20like%20to%20start%20the%20company%20trial!"
                       bsStyle="primary"
-                      className="reserve-btn"
-                      onClick={this.handleReservationClick}>
+                      className="reserve-btn">
                       <b>Try it free</b>
                     </Button>
                   </div>
                 </div>
               </div>
+              <div>Day pass available for $30</div>
             </div>
 
             <div className="section">
