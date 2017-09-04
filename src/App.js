@@ -157,85 +157,8 @@ class App extends Component {
               </div>
             </div>
 
-            { /* <div className="reservation">
-              <form className="form-inline">
-
-                <div className="row">
-                  <div className="form-group">
-                    <label className="form-label">meeting date</label>
-                    <DatePicker
-                      className="form-control"
-                      minDate={moment()}
-                      filterDate={this.isWeekday}
-                      selected={this.state.date}
-                      onChange={this.handleDateChange}
-                    />
-                  </div>
-                  <div className="form-group">
-                    <div><label className="form-label">start time</label></div>
-                    <select className="form-control" value={this.state.time} onChange={this.handleTimeChange}>
-                      <option value="10am">10:00 AM</option>
-                      <option value="10:15am">10:15 AM</option>
-                      <option value="10:30am">10:30 AM</option>
-                      <option value="10:45am">10:45 AM</option>
-                      <option value="11am">11:00 AM</option>
-                      <option value="11:15am">11:15 AM</option>
-                      <option value="11:30am">11:30 AM</option>
-                      <option value="11:45am">11:45 AM</option>
-                      <option value="12pm">12:00 PM</option>
-                      <option value="12:15pm">12:15 PM</option>
-                      <option value="12:30pm">12:30 PM</option>
-                      <option value="12:45pm">12:45 PM</option>
-                      <option value="1pm">01:00 PM</option>
-                      <option value="1:15pm">01:15 PM</option>
-                      <option value="1:30pm">01:30 PM</option>
-                      <option value="1:45pm">01:45 PM</option>
-                      <option value="2pm">02:00 PM</option>
-                      <option value="2:15pm">02:15 PM</option>
-                      <option value="2:30pm">02:30 PM</option>
-                      <option value="2:45pm">02:45 PM</option>
-                      <option value="3pm">03:00 PM</option>
-                      <option value="3:15pm">03:15 PM</option>
-                      <option value="3:30pm">03:30 PM</option>
-                      <option value="3:45pm">03:45 PM</option>
-                      <option value="4pm">04:00 PM</option>
-                    </select>
-                  </div>
-                  <div className="form-group">
-                    <div><label className="form-label">duration</label></div>
-                    <select className="form-control" value={this.state.duration} onChange={this.handleDurationChange}>
-                      <option value="30 minute">30 minute meeting</option>
-                      <option value="1 hour">1 hour meeting</option>
-                      <option value="1.5 hour">1.5 hour meeting</option>
-                      <option value="2 hour">2 hour meeting</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div className="row">
-                  <div className="form-group">
-                    <div><label className="form-label">work email</label></div>
-                    <input type="email" className="form-control form-email" id="exampleInputEmail3" onChange={this.handleEmailChange} value={this.state.email} placeholder="Work email" required />
-                  </div>
-                  <div className="form-group">
-                    <div><label className="form-label"></label></div>
-                    <Button
-                      bsStyle="primary"
-                      className="reserve-btn"
-                      disabled={this.state.isLoading}
-                      onClick={!this.state.isLoading ? this.handleReservationClick : null}>
-                      <b>{this.state.isLoading ? 'Processing...' : 'Reserve your table'}</b>
-                    </Button>
-                  </div>
-                </div>
-
-              </form>
-              <div className="reservation-disclaimer">
-                Open 10am - 4pm, Mon to Fri
-              </div>
-            </div> */}
-
             <br />
+            
             <div className="reservation-disclaimer">
               Open 10am - 4pm, Mon to Fri
             </div>
@@ -302,12 +225,60 @@ class App extends Component {
             </div>
 
             <div className="section">
+              <div className="section-title">Pricing</div>
+              <div className="pricing-description">All plans offer a 2 week trial with no credit card needed</div>
+              <div className="pricing row">
+                <div className="col-sm-6">
+                  <div className="pricing-box">
+                    <div className="pricing-individual">Individual</div>
+                    <div className="pricing-price">$250<span className="pricing-price-unit">/table/mo</span></div>
+                    <hr />
+                    <ul className="pricing-features">
+                      <li className="pricing-feature">Membership for 1 person</li>
+                      <li className="pricing-feature">Guaranteed seating</li>
+                      <li className="pricing-feature">Premium coffee and tea</li>
+                      <li className="pricing-feature">Fast wifi</li>
+                      <li className="pricing-feature">1 guest per visit</li>
+                    </ul>
+                    <Button
+                      href="mailto:hello@almondspace.com?subject=Individual%20Free%20Trial&body=I%20would%20like%20to%20start%20the%20individual%20trial!"
+                      bsStyle="primary"
+                      className="reserve-btn">
+                      <b>Try it free</b>
+                    </Button>
+                  </div>
+                </div>
+                <div className="col-sm-6">
+                  <div className="pricing-box">
+                    <div className="pricing-company">Company</div>
+                    <div className="pricing-price">$500<span className="pricing-price-unit">/table/mo</span></div>
+                    <hr />
+                    <ul className="pricing-features">
+                      <li className="pricing-feature"><b>All Individual features +</b></li>
+                      <li className="pricing-feature">Membership for all company employees</li>
+                      <li className="pricing-feature">Unlimited guests per visit</li>
+                      <li className="pricing-feature">Calendar integration</li>
+                      <li className="pricing-feature">Use of space for private events</li>
+                    </ul>
+                    <Button
+                      href="mailto:hello@almondspace.com?subject=Company%20Free%20Trial&body=I%20would%20like%20to%20start%20the%20company%20trial!"
+                      bsStyle="primary"
+                      className="reserve-btn">
+                      <b>Try it free</b>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+              <div>Day pass available for $30</div>
+            </div>
+
+            <div className="section">
               <div className="section-title">See the space</div>
               <div className="">
                 <Slider {...sliderSettings}>
-                  <div><img src="https://preview.ibb.co/jPGbE5/left.jpg" className="slider-picture" alt="front" border="0" /></div>
-                  <div><img src="https://preview.ibb.co/dV6bE5/front.jpg" className="slider-picture" alt="left" border="0" /></div>
-                  <div><img src="https://preview.ibb.co/fDi1gk/right.jpg" className="slider-picture" alt="right" border="0" /></div>
+                  <div><img src="https://preview.ibb.co/jPGbE5/left.jpg" className="slider-picture" alt="front" /></div>
+                  <div><img src="https://preview.ibb.co/dV6bE5/front.jpg" className="slider-picture" alt="left" /></div>
+                  <div><img src="https://preview.ibb.co/fDi1gk/right.jpg" className="slider-picture" alt="right" /></div>
                 </Slider>
               </div>
             </div>
