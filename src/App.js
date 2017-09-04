@@ -301,21 +301,21 @@ class App extends Component {
               </div>
             </div>
 
-            <div className="section pricing">
+            <div className="section">
               <div className="section-title">Pricing</div>
-              <div>All plans offer a 2 week trial with no credit card needed</div>
-              <div className="row">
+              <div className="pricing-description">All plans offer a 2 week trial with no credit card needed</div>
+              <div className="pricing row">
                 <div className="col-sm-6">
                   <div className="pricing-box">
-                    <div>Individual</div>
-                    <div>$200/table/mo</div>
+                    <div className="pricing-individual">Individual</div>
+                    <div className="pricing-price">$250<span className="pricing-price-unit">/table/mo</span></div>
                     <hr />
-                    <ul>
-                      <li>Membership for 1 person</li>
-                      <li>Guaranteed seating</li>
-                      <li>Premium coffee and tea</li>
-                      <li>Fast wifi</li>
-                      <li>1 guest per visit</li>
+                    <ul className="pricing-features">
+                      <li className="pricing-feature">Membership for 1 person</li>
+                      <li className="pricing-feature">Guaranteed seating</li>
+                      <li className="pricing-feature">Premium coffee and tea</li>
+                      <li className="pricing-feature">Fast wifi</li>
+                      <li className="pricing-feature">1 guest per visit</li>
                     </ul>
                     <Button
                       bsStyle="primary"
@@ -327,15 +327,15 @@ class App extends Component {
                 </div>
                 <div className="col-sm-6">
                   <div className="pricing-box">
-                    <div>Company</div>
-                    <div>$500/table/mo</div>
+                    <div className="pricing-company">Company</div>
+                    <div className="pricing-price">$500<span className="pricing-price-unit">/table/mo</span></div>
                     <hr />
-                    <ul>
-                      <li>All Individual features +</li>
-                      <li>Membership for all company employees</li>
-                      <li>Unlimited guests per visit</li>
-                      <li>Calendar integration</li>
-                      <li>Use of space for private events</li>
+                    <ul className="pricing-features">
+                      <li className="pricing-feature"><b>All Individual features +</b></li>
+                      <li className="pricing-feature">Membership for all company employees</li>
+                      <li className="pricing-feature">Unlimited guests per visit</li>
+                      <li className="pricing-feature">Calendar integration</li>
+                      <li className="pricing-feature">Use of space for private events</li>
                     </ul>
                     <Button
                       bsStyle="primary"
