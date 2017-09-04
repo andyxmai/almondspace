@@ -155,6 +155,10 @@
 .pricing {
 }
 
+.pricing-box {
+  border: 1px solid #EFEFEF;
+}
+
 .reservation {
   padding: 20px 0px;
   color: #676767;

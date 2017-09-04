@@ -301,13 +301,60 @@ class App extends Component {
               </div>
             </div>
 
+            <div className="section pricing">
+              <div className="section-title">Pricing</div>
+              <div>All plans offer a 2 week trial with no credit card needed</div>
+              <div className="row">
+                <div className="col-sm-6">
+                  <div className="pricing-box">
+                    <div>Individual</div>
+                    <div>$200/table/mo</div>
+                    <hr />
+                    <ul>
+                      <li>Membership for 1 person</li>
+                      <li>Guaranteed seating</li>
+                      <li>Premium coffee and tea</li>
+                      <li>Fast wifi</li>
+                      <li>1 guest per visit</li>
+                    </ul>
+                    <Button
+                      bsStyle="primary"
+                      className="reserve-btn"
+                      onClick={this.handleReservationClick}>
+                      <b>Try it free</b>
+                    </Button>
+                  </div>
+                </div>
+                <div className="col-sm-6">
+                  <div className="pricing-box">
+                    <div>Company</div>
+                    <div>$500/table/mo</div>
+                    <hr />
+                    <ul>
+                      <li>All Individual features +</li>
+                      <li>Membership for all company employees</li>
+                      <li>Unlimited guests per visit</li>
+                      <li>Calendar integration</li>
+                      <li>Use of space for private events</li>
+                    </ul>
+                    <Button
+                      bsStyle="primary"
+                      className="reserve-btn"
+                      onClick={this.handleReservationClick}>
+                      <b>Try it free</b>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="section">
               <div className="section-title">See the space</div>
               <div className="">
                 <Slider {...sliderSettings}>
-                  <div><img src="https://preview.ibb.co/jPGbE5/left.jpg" className="slider-picture" alt="front" border="0" /></div>
-                  <div><img src="https://preview.ibb.co/dV6bE5/front.jpg" className="slider-picture" alt="left" border="0" /></div>
-                  <div><img src="https://preview.ibb.co/fDi1gk/right.jpg" className="slider-picture" alt="right" border="0" /></div>
+                  <div><img src="https://preview.ibb.co/jPGbE5/left.jpg" className="slider-picture" alt="front" /></div>
+                  <div><img src="https://preview.ibb.co/dV6bE5/front.jpg" className="slider-picture" alt="left" /></div>
+                  <div><img src="https://preview.ibb.co/fDi1gk/right.jpg" className="slider-picture" alt="right" /></div>
                 </Slider>
               </div>
             </div>
