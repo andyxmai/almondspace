@@ -156,7 +156,8 @@ class App extends Component {
                 <div>Focus on being creative and productive instead.</div>
               </div>
             </div>
-            <div className="reservation">
+
+            { /* <div className="reservation">
               <form className="form-inline">
 
                 <div className="row">
@@ -232,8 +233,12 @@ class App extends Component {
               <div className="reservation-disclaimer">
                 Open 10am - 4pm, Mon to Fri
               </div>
-            </div>
+            </div> */}
 
+            <br />
+            <div className="reservation-disclaimer">
+              Open 10am - 4pm, Mon to Fri
+            </div>
             <div className="map">
               <iframe className="map-frame" frameBorder="0"
                 title="map"
