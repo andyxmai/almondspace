@@ -158,7 +158,7 @@ class App extends Component {
             </div>
 
             <br />
-            
+
             <div className="reservation-disclaimer">
               Open 10am - 4pm, Mon to Fri
             </div>
@@ -226,7 +226,7 @@ class App extends Component {
 
             <div className="section">
               <div className="section-title">Pricing</div>
-              <div className="pricing-description">All plans offer a 2 week trial with no credit card needed</div>
+              <div className="pricing-description"> If at anytime during your first month using our service you are dissatisfied, we will offer a FULL REFUND</div>
               <div className="pricing row">
                 <div className="col-sm-6">
                   <div className="pricing-box">
@@ -244,7 +244,7 @@ class App extends Component {
                       href="mailto:hello@almondspace.com?subject=Individual%20Free%20Trial&body=I%20would%20like%20to%20start%20the%20individual%20trial!"
                       bsStyle="primary"
                       className="reserve-btn">
-                      <b>Try it free</b>
+                      <b>Contact us</b>
                     </Button>
                   </div>
                 </div>
@@ -264,7 +264,7 @@ class App extends Component {
                       href="mailto:hello@almondspace.com?subject=Company%20Free%20Trial&body=I%20would%20like%20to%20start%20the%20company%20trial!"
                       bsStyle="primary"
                       className="reserve-btn">
-                      <b>Try it free</b>
+                      <b>Contact us</b>
                     </Button>
                   </div>
                 </div>
