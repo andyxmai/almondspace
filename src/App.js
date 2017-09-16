@@ -224,7 +224,7 @@ class App extends Component {
               </div>
             </div>
 
-            <div className="section">
+            {/*<div className="section">
               <div className="section-title">Pricing</div>
               <div className="pricing-description"> If at anytime during your first month using our service you are dissatisfied, we will offer a FULL REFUND</div>
               <div className="pricing row">
@@ -270,7 +270,7 @@ class App extends Component {
                 </div>
               </div>
               <div>Day pass available for $30</div>
-            </div>
+            </div> */}
 
             <div className="section">
               <div className="section-title">See the space</div>
